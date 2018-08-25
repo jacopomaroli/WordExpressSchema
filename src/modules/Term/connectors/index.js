@@ -1,7 +1,9 @@
 import getTerm from './getTerm'
+import getTermParentsList from './getTermParentsList'
 
-export default function ({Terms}) {
+export default function ({Terms, TermTaxonomy}, settings) {
   return {
-    getTerm: getTerm(Terms)
+    getTerm: getTerm(Terms),
+    getTermParentsList: getTermParentsList(Terms, TermTaxonomy, settings)
   }
 }

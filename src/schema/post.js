@@ -19,6 +19,7 @@ const Post = `
     categories: [Category]
     post_meta(keys: [MetaType], after: String, first: Int, before: String, last: Int): [Postmeta]
     author: User
+    permalink(permalink: String, leavename: Boolean): String
   }
 `
 
