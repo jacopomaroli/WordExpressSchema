@@ -21,7 +21,7 @@ export default function (Terms, TermTaxonomy, settings) {
           slug: term_taxonomy[`${wp_prefix}term`].slug,
           name: term_taxonomy[`${wp_prefix}term`].name
         }
-        termIds.push(res)
+        termIds = [res, ...termIds]
         return getTermParentsList(term_taxonomy.parent, termIds)
       } 
       return termIds
