@@ -34,6 +34,11 @@ export default function (TermRelationships, Post, TermTaxonomy, settings){
               post_type: post_type,
               post_status: 'publish'
             }
+          }, {
+            model: TermTaxonomy,
+            where: {
+              taxonomy: 'category'
+            }
           }],
           where: {
             term_taxonomy_id: termIds
