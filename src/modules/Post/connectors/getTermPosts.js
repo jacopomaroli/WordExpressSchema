@@ -14,9 +14,7 @@ export default function (TermRelationships, Post, TermTaxonomy, settings){
         include: [],
         where: {
           parent: parentTermIds
-        },
-        limit: limit,
-        offset: skip
+        }
       })
       .then(function (posts) {
         const p = posts.map(post => post.term_taxonomy_id)
