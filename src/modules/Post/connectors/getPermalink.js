@@ -71,8 +71,9 @@ export default function () {
         ]
 
         return Promise.all(promises)
+          .then(res => [permalink, ...res])
       })
-      .then(function([category, author]) {
+      .then(function([permalink, category, author]) {
         let date = dateformat(post.post_date, 'yyyy mm dd HH MM ss').split(' ')
 
         let rewritereplace = [
