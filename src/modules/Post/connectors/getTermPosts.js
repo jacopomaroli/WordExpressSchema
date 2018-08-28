@@ -1,3 +1,6 @@
+import Sequelize from 'sequelize'
+const Op = Sequelize.Op
+
 export default function (TermRelationships, Post, TermTaxonomy, settings){
   const {wp_prefix} = settings.privateSettings
 

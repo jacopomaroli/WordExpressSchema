@@ -9,7 +9,7 @@ export default function ({Post, Postmeta, Terms, TermRelationships, TermTaxonomy
   return {
     getPost: getPost(Post),
     getPosts: getPosts(Post),
-    getPostTerms: getPostTerms(Terms, TermRelationships, settings),
+    getPostTerms: getPostTerms(Terms, TermRelationships, TermTaxonomy, settings),
     getTermPosts: getTermPosts(TermRelationships, Post, TermTaxonomy, settings),
     getPostLayout: getPostLayout(Postmeta),
     getPermalink: getPermalink(),
