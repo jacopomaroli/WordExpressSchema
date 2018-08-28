@@ -5,11 +5,11 @@ import getTermPosts from './getTermPosts'
 import getPostLayout from './getPostLayout'
 import getPermalink from './getPermalink'
 
-export default function ({Post, Postmeta, Terms, TermRelationships, TermTaxonomy, Option}, settings) {
+export default function ({Post, Postmeta, Terms, TermRelationships, TermTaxonomy}, settings) {
   return {
     getPost: getPost(Post),
     getPosts: getPosts(Post),
-    getPostTerms: getPostTerms(Terms, TermRelationships, TermTaxonomy, settings),
+    getPostTerms: getPostTerms(Terms, TermRelationships, settings),
     getTermPosts: getTermPosts(TermRelationships, Post, TermTaxonomy, settings),
     getPostLayout: getPostLayout(Postmeta),
     getPermalink: getPermalink(),
