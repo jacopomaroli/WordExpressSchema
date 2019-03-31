@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/schema/setting.js"],"names":["Setting"],"mappings":";;;;;AAAA,IAAMA,iFAAN;;kBAOeA,O","file":"setting.js","sourcesContent":["const Setting = `\r\n  type Setting {\r\n    uploads: String\r\n    amazonS3: Boolean\r\n  }\r\n`\r\n\r\nexport default Setting"]}

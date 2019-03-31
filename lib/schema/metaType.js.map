@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/schema/metaType.js"],"names":["MetaType"],"mappings":";;;;;AAAA,IAAMA,iIAAN;;kBAUeA,Q","file":"metaType.js","sourcesContent":["const MetaType = `\r\n  enum MetaType {\r\n    _thumbnail_id\r\n    _wp_attached_file\r\n    react_layout\r\n    amazonS3_info\r\n    order\r\n  }\r\n`\r\n\r\nexport default MetaType"]}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/schema/inputs/orderInput.js"],"names":["OrderInput"],"mappings":";;;;;AAAA,IAAMA,yFAAN;;kBAOeA,U","file":"orderInput.js","sourcesContent":["const OrderInput = `\r\n  input OrderInput {\r\n    orderBy: String,\r\n    direction: String\r\n  }\r\n`\r\n\r\nexport default OrderInput"]}
