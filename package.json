@@ -3,12 +3,14 @@
   "version": "4.3.0",
   "description": "A GraphQL Schema for WordPress",
   "files": [
-    "lib"
+    "lib",
+    "src"
   ],
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf lib && babel src -d lib",
+    "prepare": "npm run build",
+    "build": "rimraf lib && babel src -d lib --source-maps",
     "buildwatch": "nodemon --exec npm run build --watch ./src"
   },
   "repository": {
