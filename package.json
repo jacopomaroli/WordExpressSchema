@@ -9,8 +9,6 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "npm install && npm run build",
-    "install": "npm install && npm run build",
     "build": "rimraf lib && babel src -d lib --source-maps",
     "buildwatch": "nodemon --exec npm run build --watch ./src"
   },
